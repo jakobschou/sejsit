@@ -3,7 +3,6 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Sejs IT Support</title>
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./theme.min.css">
@@ -11,11 +10,16 @@
   </head>
   <body>
     <!-- ========== HEADER ========== -->
-    <header id="header" class="navbar navbar-expand-lg navbar-light navbar-end bg-white">
+    <header id="header" class="navbar navbar-expand-lg navbar-light navbar-end bg-white fixed-top">
       <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
           <a class="navbar-brand" href="https://sejsit.dk"><img class="navbar-brand-logo" src="./logostor.jpg" alt="Image Description"></a>
-
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-default"><b>&#9776;</b></span>
+            <span class="navbar-toggler-toggled"><b>&#10006;</b></span>
+          </button>
+          <!-- End Toggler -->
           <!-- Collapse -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -46,7 +50,7 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
        <!-- Hero -->
-      <div class="bg-primary-dark position-relative overflow-hidden">
+      <div class="bg-primary-dark position-relative overflow-hidden" id="kontakt">
         <div class="container content-space-2">
           <div class="row justify-content-center align-items-lg-center">
             <div class="col-md-8 col-lg-6 mb-7 mb-lg-0">
@@ -116,7 +120,7 @@
             </div>
             <!-- End Col -->
 
-            <div class="col-md-8 col-lg-6" id="kontakt">
+            <div class="col-md-8 col-lg-6">
               <div class="ps-lg-5">
                 <!-- Card -->
                 <div class="card card-lg">
@@ -132,12 +136,11 @@
                     </div>
                     <!-- End Row -->
 
-                    <form action="https://getform.io/f/1f20636e-79a2-4117-8e4b-465d43ba7770" method="POST" class="js-validate need-validate" novalidate="">
+                    <form action="https://getform.io/f/1f20636e-79a2-4117-8e4b-465d43ba7770" method="POST">
                       <!-- Form -->
                       <div class="mb-4">
                         <label class="form-label" for="registerEmail">Navn</label>
                         <input type="text" class="form-control form-control-lg" name="Navn" placeholder="Dit navn..." aria-label="Navn" required="" data-msg="Udfyld feltet med dit navn.">
-						<span class="invalid-feedback">Indtast dit navn.</span>
                       </div>
                       <!-- End Form -->
 					  <div class="mb-4">
@@ -151,7 +154,6 @@
 						  <div class="mb-4">
 							<label class="form-label" for="registerEmail">Email-adresse</label>
 							<input type="email" class="form-control form-control-lg" name="Email" placeholder="mail@mail.dk" aria-label="mail@mail.dk" required="" data-msg="Udfyld feltet med en email-adresse.">
-							<span class="invalid-feedback">Indtast din email-adresse.</span>
 						  </div>
 						  <!-- End Form -->
 						</div>
@@ -161,8 +163,7 @@
 						  <!-- Form -->
 						  <div class="mb-4">
 							<label class="form-label" for="registerEmail">Tlf-nummer</label>
-							<input type="tel" class="form-control form-control-lg" name="Tlf" placeholder="12345678" aria-label="12345678" required="" data-msg="Udfyld feltet med dit tlf-nummer.">
-							<span class="invalid-feedback">Indtast dit tlf-nummer.</span>
+							<input type="tel" class="form-control form-control-lg" name="Tlf" placeholder="12345678" aria-label="12345678" required="" minlength="8" maxlength="11" data-msg="Udfyld feltet med dit tlf-nummer.">
 						  </div>
 						  <!-- End Form -->
 						</div>
@@ -174,14 +175,13 @@
 					  <div class="mb-4">
 						<label class="form-label" for="contactsFormDetails">Din besked</label>
 						<textarea class="form-control" name="Besked" id="contactsFormDetails" placeholder="Beskriv dit IT-problem." aria-label="Beskriv dit IT-problem." rows="4"  required=""></textarea>
-						<span class="invalid-feedback">Du mangler at indtaste din besked.</span>
 					  </div>
 					  <!-- End Form -->
 
                       <div class="d-grid text-center">
                         <button type="submit" class="btn btn-primary btn-lg">Send din besked afsted!</button>
                         <span class="form-text">Brug for hjælp nu?</span>
-						<span class="small">Ring til mig på <a class="link" href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
+						<span class="small">Ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
                       </div>
                     </form>
                   </div>
@@ -192,12 +192,12 @@
             <!-- End Col -->
           </div>
           <!-- End Row -->
-
+		  
+		  <!-- Rating
           <div class="border-top border-white-10 my-10"></div>
 
           <div class="row">
             <div class="col-sm mb-5 mb-sm-0">
-              <!-- Rating -->
               <div class="d-flex gap-1 mb-2">
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star.svg" alt="Review rating" width="16">
@@ -205,15 +205,11 @@
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star.svg" alt="Review rating" width="16">
               </div>
-              <!-- End Rating -->
-
               <blockquote class="blockquote blockquote-sm text-white mb-4">“Hurtig hjælp, lige til tiden!”</blockquote>
               <p class="text-white-70">Grethe, kunde</p>
             </div>
-            <!-- End Col -->
 
             <div class="col-sm mb-5 mb-sm-0">
-              <!-- Rating -->
               <div class="d-flex gap-1 mb-2">
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star.svg" alt="Review rating" width="16">
@@ -221,15 +217,11 @@
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star-half.svg" alt="Review rating" width="16">
               </div>
-              <!-- End Rating -->
-
               <blockquote class="blockquote blockquote-sm text-white mb-4">“Hurtig hjælp, lige til tiden!”</blockquote>
               <p class="text-white-70">Grethe, kunde</p>
             </div>
-            <!-- End Col -->
 
             <div class="col-sm mb-5">
-              <!-- Rating -->
               <div class="d-flex gap-1 mb-2">
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star.svg" alt="Review rating" width="16">
@@ -237,14 +229,12 @@
                 <img src="./star.svg" alt="Review rating" width="16">
                 <img src="./star-half.svg" alt="Review rating" width="16">
               </div>
-              <!-- End Rating -->
-
               <blockquote class="blockquote blockquote-sm text-white mb-4">“Hurtig hjælp, lige til tiden!”</blockquote>
               <p class="text-white-70">Grethe, kunde</p>
             </div>
-            <!-- End Col -->
+
           </div>
-          <!-- End Row -->
+           End Rating -->
         </div>
 
       </div>
@@ -311,7 +301,7 @@
         </div>
 		
 		<div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <p class="fs-6"><i>Du er velkommen til at kontakte mig for et uforpligtende tilbud på dit problem.</i></p>
+          <p class="fs-6"><i>Du er velkommen til at <a href="#kontakt">kontakte</a> mig for et uforpligtende tilbud på dit problem.</i></p>
         </div>
         <!-- End Table -->
       </div>
@@ -498,7 +488,7 @@
 
             <div class="card-footer bg-soft-warning text-center">
               <p class="mb-0">Har du stadig spørgsmål?</p>
-			  <span class="small">Så ring til mig på: <a class="link" href="tel:+4529684330">+45 29 68 43 30 &#9742</a></span>
+			  <span class="small">Så ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
             </div>
           </div>
           <!-- End Card -->
@@ -588,16 +578,6 @@
     <!-- JS Plugins Init. -->
     <script>
       (function() {
-        // INITIALIZATION OF BOOTSTRAP VALIDATION
-        // =======================================================
-        HSBsValidation.init('.js-validate', {
-          onSubmit: data => {
-            data.event.preventDefault()
-            alert('Submited')
-          }
-        })
-
-
         // INITIALIZATION OF GO TO
         // =======================================================
         new HSGoTo('.js-go-to')
