@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sejs IT Support</title>
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./theme.min.css">
-	<link href="./css2" rel="stylesheet">
+    <link href="./css2" rel="stylesheet">
   </head>
   <body>
     <header id="header" class="navbar navbar-expand-lg navbar-light navbar-end bg-white fixed-top">
       <div class="container">
-        <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+        <nav class="navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
           <a class="navbar-brand" href="https://sejsit.dk"><img class="navbar-brand-logo" src="./logostor.jpg" alt="Image Description"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-default"><b>&#9776;</b></span>
@@ -27,8 +27,7 @@
               </li>
 
               <li class="nav-divider"></li>
-
-			  <li class="nav-item">
+							<li class="nav-item">
                 <a id="pagesMegaMenu" class="nav-link" href="#faq" role="button" aria-expanded="false">Spørgsmål?</a>
               </li>
               <li class="nav-item">
@@ -41,10 +40,10 @@
     </header>
     <main id="content" role="main">
        <!-- Start Sektion 1 -->
-      <div class="bg-primary-dark position-relative overflow-hidden">
-        <div class="container content-space-2">
+      <div class="bg-primary-dark position-relative overflow-hidden" id="kontakt">
+        <div class="container content-space-3">
           <div class="row justify-content-center align-items-lg-center">
-			<!-- Start Startside -->
+						<!-- Start Startside -->
             <div class="col-md-8 col-lg-6 mb-7 mb-lg-0">
               <div class="pe-lg-3 mb-7">
                 <h1 class="display-3 text-white mb-3 mb-md-5">Sejs IT Support løser dit IT-problem med <br>
@@ -98,9 +97,9 @@
             </div>
             <!-- Slut Startside -->
             <!-- Start Kontakt -->
-            <div class="col-md-8 col-lg-6" id="kontakt">
+            <div class="col-md-8 col-lg-6">
               <div class="ps-lg-5">
-                <div class="card card-lg">
+                <div class="card card-lg" id="kontaktformular">
                   <div class="card-body">
                     <div class="row align-items-sm-center mb-5">
                       <div class="col-sm">
@@ -113,32 +112,32 @@
                         <label class="form-label" for="registerEmail">Navn</label>
                         <input type="text" class="form-control form-control-lg" name="Navn" placeholder="Dit navn..." aria-label="Navn" required="" data-msg="Udfyld feltet med dit navn.">
                       </div>
-					  <div class="mb-4">
+					  					<div class="mb-4">
                         <label class="form-label" for="registerEmail">Adresse (ikke nødvendigt)</label>
                         <input type="text" class="form-control form-control-lg" name="Adresse" placeholder="Adresse..." aria-label="Adresse" data-msg="Udfyld feltet med din adresse.">
                       </div>
-					  <div class="row">
-						<div class="col-sm-6 mb-4 mb-sm-0">
-						  <div class="mb-4">
-							<label class="form-label" for="registerEmail">Email-adresse</label>
-							<input type="email" class="form-control form-control-lg" name="Email" placeholder="mail@mail.dk" aria-label="mail@mail.dk" required="" data-msg="Udfyld feltet med en email-adresse.">
-						  </div>
-						</div>
-						<div class="col-sm-6">
-						  <div class="mb-4">
-							<label class="form-label" for="registerEmail">Tlf-nummer</label>
-							<input type="tel" class="form-control form-control-lg" name="Tlf" placeholder="12345678" aria-label="12345678" required="" minlength="8" maxlength="11" data-msg="Udfyld feltet med dit tlf-nummer.">
-						  </div>
-						</div>
-					  </div>
-					  <div class="mb-4">
-						<label class="form-label" for="contactsFormDetails">Din besked</label>
-						<textarea class="form-control" name="Besked" id="contactsFormDetails" placeholder="Beskriv dit IT-problem." aria-label="Beskriv dit IT-problem." rows="4"  required=""></textarea>
-					  </div>
+											<div class="row">
+											<div class="col-sm-6 mb-4 mb-sm-0">
+												<div class="mb-4">
+												<label class="form-label" for="registerEmail">Email-adresse</label>
+												<input type="email" class="form-control form-control-lg" name="Email" placeholder="mail@mail.dk" aria-label="mail@mail.dk" required="" data-msg="Udfyld feltet med en email-adresse.">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="mb-4">
+												<label class="form-label" for="registerEmail">Tlf-nummer</label>
+												<input type="tel" class="form-control form-control-lg" name="Tlf" placeholder="12345678" aria-label="12345678" required="" minlength="8" maxlength="11" data-msg="Udfyld feltet med dit tlf-nummer.">
+												</div>
+											</div>
+											</div>
+											<div class="mb-4">
+											<label class="form-label" for="contactsFormDetails">Din besked</label>
+											<textarea class="form-control" name="Besked" id="contactsFormDetails" placeholder="Beskriv dit IT-problem." aria-label="Beskriv dit IT-problem." rows="4"  required=""></textarea>
+											</div>
                       <div class="d-grid text-center">
                         <button type="submit" class="btn btn-primary btn-lg">Send din besked afsted!</button>
                         <span class="form-text">Brug for hjælp nu?</span>
-						<span class="small">Ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
+												<span class="small">Ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
                       </div>
                     </form>
                   </div>
@@ -191,11 +190,10 @@
           </div>
            End Rating -->
         </div>
-
       </div>
       <!-- Slut Sektion 1 -->
 
-	  <!-- Start Prislite -->
+		  <!-- Start Prislite -->
       <div id="prisliste" class="container content-space-1 content-space-md-3">
         <div class="w-lg-65 text-center mx-lg-auto mb-7">
           <h3>Prisliste</h3>
@@ -234,15 +232,15 @@
                 <th scope="row">Tjek af hjemmenetværk </th>
                 <td class="table-text-center">450 kr.</td>
               </tr>
-			  <tr>
+						  <tr>
                 <th scope="row">Ad-hoc opgaver</th>
                 <td class="table-text-center">450 kr.</td>
               </tr>
             </tbody>
           </table>
         </div>
-		<div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <p class="fs-6"><i>Du er velkommen til at <a href="#kontakt">kontakte</a> mig for et uforpligtende tilbud på dit problem.</i></p>
+				<div class="w-lg-65 text-center mx-lg-auto mb-7">
+          <p class="fs-6"><i>Du er velkommen til at <a href="#kontaktformular">kontakte</a> mig for et uforpligtende tilbud på dit problem.</i></p>
         </div>
       </div>
       <!-- Slut Pricing Table -->
@@ -321,7 +319,7 @@
               <p>Jeg startede Sejs IT Support tilbage i 2014 med et ønske om at levere en service ud over det sædvanlige.<br><br>Dette har kun kunne lade sig gøre gennem personlig kontakt og support i øjenhøjde. Jeg stræber efter den bedste oplevelse, med den rette løsning første gang.<br><br>Gennem årene har jeg opbygget mange relationer og bekendtskaber - og der kommer helt sikkert flere i fremtiden.</p>
             </div>
           </div>
-		  <div class="border-top mx-auto" style="max-width: 30rem;"></div>
+		  		<div class="border-top mx-auto" style="max-width: 30rem;"></div>
         </div>
           <div class="w-lg-75 text-center mx-lg-auto">
             <div class="row col-sm-divider">
@@ -388,7 +386,7 @@
             </div>
             <div class="card-footer bg-soft-warning text-center">
               <p class="mb-0">Har du stadig spørgsmål?</p>
-			  <span class="small">Så ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
+			  			<span class="small">Så ring til mig på <a href="tel:+4529684330">+45 29 68 43 30 &#9742</a> eller skriv til <a href="mailto:support@sejsit.dk">support@sejsit.dk</a></span>
             </div>
           </div>
         </div>
